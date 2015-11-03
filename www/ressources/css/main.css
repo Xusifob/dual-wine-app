@@ -1,0 +1,61 @@
+body {
+  background-color: #ECECEC;
+}
+body .loader {
+  position: absolute;
+  border-radius: 111%;
+  left: 48%;
+  box-shadow: none;
+  display: none;
+  top: 65px;
+  z-index: 99;
+}
+body a#btn-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+body .margin25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+body .margin-bottom-25 {
+  margin-bottom: 25px;
+}
+body .margin-top-25 {
+  margin-top: 25px;
+}
+body .collapsible-body {
+  background-color: #fff;
+}
+body .card .card-action a {
+  color: #fff !important;
+}
+body #partie .card {
+  cursor: pointer;
+}
+body .progress {
+  height: 20px;
+}
+body .progress .determinate {
+  -webkit-transition: width 50ms linear;
+  -moz-transition: width 50ms linear;
+  -o-transition: width 50ms linear;
+  -ms-transition: width 50ms linear;
+  transition: width 50ms linear;
+}
+body .collapsible-header {
+  position: relative;
+}
+body .s10p {
+  width: 98%;
+}
+body .offset-s1p {
+  margin-left: 1%;
+}
+body .card .card-title {
+  font-size: 16px;
+}
+body .card .card-content .card-title {
+  line-height: 10px;
+}

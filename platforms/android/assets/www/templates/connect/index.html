@@ -1,0 +1,36 @@
+<div class="center-align margin25">
+    <a href="/connect/newpartie" class="waves-effect light-blue darken-1 btn-large" >Nouvelle partie</a>
+</div>
+
+<p id="defi-new">Nouveaux défis !</p>
+<ul class="collapsible margin-bottom-25" data-collapsible="accordion" id="new">
+</ul>
+<!-- Fin des nouvelles demandes -->
+
+
+
+<!-- défis en cours -->
+<p id="defi-inProgress">Défis en cours :</p>
+<ul class="collapsible margin-bottom-25" data-collapsible="accordion" id="inProgress">
+</ul>
+<!-- Fin des défis en cours -->
+
+
+
+<!-- Défis terminés -->
+<p id="defi-done">Défis terminés:</p>
+<ul class="collapsible margin-bottom-25" data-collapsible="accordion" id="done">
+</ul>
+<!-- Fin des partis finies -->
+
+
+<a class="btn-floating btn-large waves-effect right-align light-blue darken-1 btn-large" href="/connect/newpartie" id="btn-float"><i class="mdi-content-add"></i></a>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.collapsible').collapsible({
+            accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+    });
+
+    loadScript('ressources/js/index-connect.js');
+</script>

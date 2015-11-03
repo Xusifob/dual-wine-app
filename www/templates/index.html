@@ -1,0 +1,67 @@
+<div class="row">
+    <h1 class="center-align">Dual Wine</h1>
+</div>
+<p>Connexion</p>
+<div class="card">
+    <form enctype="enctype=application/json" method="post" name="connexion">
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="mdi-action-account-circle prefix"></i>
+                <input id="pseudo2" type="text" class="validate" required>
+                <label for="pseudo2">Pseudo</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="mdi-action-lock-outline prefix"></i>
+                <input id="password2" type="password" class="validate" required>
+                <label for="password2">Mot de passe</label>
+            </div>
+        </div>
+        <div class="row">
+            <a href="/password-forgot" class="center-align center-block">Mot de passe oublié</a>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <button class="waves-effect light-blue darken-1 btn-large" name="connexion">Se connecter</button>
+            </div>
+        </div>
+    </form>
+</div>
+<p>Inscription</p>
+<div class="card">
+    <form enctype="enctype=application/json" method="post" name="inscription">
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="mdi-action-account-circle prefix"></i>
+                <input id="pseudo" type="text" class="validate" required>
+                <label for="pseudo">Pseudo</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="mdi-communication-email prefix"></i>
+                <input id="email" type="email" class="validate" required>
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="mdi-action-lock-outline prefix"></i>
+                <input id="password" type="password" class="validate" required>
+                <label for="password">Mot de passe</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <button class="waves-effect light-blue darken-1 btn-large" name="inscription">S'inscrire</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    loadScript('ressources/js/inscription.js');
+</script>
+        

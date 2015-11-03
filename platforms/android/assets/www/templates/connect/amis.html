@@ -1,0 +1,24 @@
+<p>Trouve de nouveaux amis ! </p>
+<div class="card">
+    <div class="row margin-top-25">
+        <form enctype="enctype=application/json" method="post" name="searchFriend">
+            <div class="input-field col s12 m7 offset-m2">
+                <i class="mdi-action-search prefix"></i>
+                <input id="pseudo" type="text" class="validate" required>
+                <label for="pseudo">Entre le pseudo d'un ami</label>
+            </div>
+            <div class="center-align">
+                <button class="waves-effect light-blue darken-1 btn-large">Rechercher</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<p>Mes amis</p>
+<ul class="collapsible margin-bottom-25" data-collapsible="accordion" id="players">
+</ul>
+
+<a class="btn-floating btn-large waves-effect right-align light-blue darken-1 btn-large" id="btn-float"><i class="mdi-content-add"></i></a>
+<script type="text/javascript">
+    loadScript('ressources/js/friends.js');
+</script>

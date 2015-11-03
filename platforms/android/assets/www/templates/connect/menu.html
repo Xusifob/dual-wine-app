@@ -1,0 +1,35 @@
+<nav class="light-blue darken-1">
+    <div class="nav-wrapper">
+        <span class="brand-logo">Wine Quizz</span>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="/connect/accueil">Accueil</a></li>
+            <li><a href="/connect/amis">Mes amis</a></li>
+            <li><a href="/connect/profil">Mon profil</a></li>
+            <li><a href="/connect/classement">Classement</a></li>
+            <li><a href="#" class="deconnexion">Déconnexion</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="/connect/accueil">Accueil</a></li>
+            <li><a href="/connect/amis">Mes amis</a></li>
+            <li><a href="/connect/profil">Mon profil</a></li>
+            <li><a href="/connect/classement">Classement</a></li>
+            <li><a href="#" class="deconnexion">Déconnexion</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script type="text/javascript">
+    $( document ).ready(function(){
+    // Initialize collapse button
+    $(".button-collapse").sideNav();
+    });
+</script>
+<script type="text/javascript">
+    $('.deconnexion').on('click',function(){
+        localStorage.clear();
+        $('#nav').empty();
+        router.navigate('/');
+        return false;
+    });
+</script>
